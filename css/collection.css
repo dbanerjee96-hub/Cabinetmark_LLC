@@ -77,7 +77,6 @@ a {
     outline: 1px solid var(--primary-color);
 }
 
-
 /* Header Starts */
 
 .top-navbar {
@@ -166,172 +165,56 @@ a {
     display: block;
 }
 
-/* .modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 70vh;
-    width: 80vw;
-    border-radius: 20px;
-    background: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-
-.modal-content {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--secondary-color);
-    color: var(--tertiary-color);
-    border: none;
-}
-
-.modal:target {
-    visibility: visible;
-} */
-
 /* Header Ends */
 
 /* Banner Starts */
 
-.banner-section {
-    background: url(../assets/banner.png) no-repeat center/cover;
-    padding: 100px 0;
-    min-height: 100vh;
+.colc-banner-section {
+    background: url(../assets/about-banner-2.png) no-repeat center/cover;
+    padding: 180px 0;
 }
 
-.white-box {
-    padding: 75px 60px;
+.colc-white-box {
+    max-width: 470px;
+    padding: 32px 100px;
     background: var(--tertiary-color);
     border-radius: 16px;
+    margin: 0 auto;
 }
 
-.banner-desc {
-    max-width: 580px;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 35px;
-    color: var(--secondary-color);
+.colc-banner-section .title1 {
+    margin-bottom: 0;
 }
 
 /* Banner Ends */
 
-/* Product Starts */
+/* Collection Starts */
 
-.product-section {
+.collection-section {
     padding: 100px 0;
-}
-
-.prod-desc-1 {
-    font-family: "Amiri", serif;
-    font-size: 20px;
-    max-width: 325px;
-    margin-bottom: 6px;
-    color: var(--secondary-color);
-}
-
-.p-1 {
-    width: 100%;
-}
-
-.prod-desc {
-    font-family: "Amiri", serif;
-    font-size: 20px;
-    max-width: 325px;
-    margin-bottom: 6px;
-    color: var(--primary-color);
-}
-
-.star {
-    margin: 20px 3px 10px 0;
-}
-
-.price {
-    font-family: "Amiri", serif;
-    font-size: 16px;
-    color: var(--primary-color);
-}
-
-/* Product Ends */
-
-/* Story Starts */
-
-.story-section {
-    padding: 100px 0 150px;
-}
-
-.story-image {
-    position: relative;
-    z-index: 1;
-}
-
-.small-image {
-    position: absolute;
-    z-index: 2;
-    bottom: -56px;
-    right: -97px;
-    /* outline: 3px solid var(--tertiary-color); */
-}
-
-.story-para {
-    max-width: 580px;
-    margin-bottom: 30px;
-}
-
-.story-content .primary-btn {
-    color: var(--primary-color);
-    background: var(--secondary-color);
-    font-size: 18px;
-    padding: 16px 35px;
-    border-radius: 50px;
-    margin: 0 auto;
-}
-
-.story-content .primary-btn:hover {
-    background: var(--tertiary-color);
-    outline: 1px solid var(--primary-color);
-}
-
-
-/* Story Ends */
-
-/* Service Starts */
-
-.service-section {
-    padding: 0 0 100px 0;
-}
-
-.service-symbols {
-    margin-bottom: 40px;
-}
-
-.symbols {
-    margin-bottom: 32px;
-}
-
-.service-desc {
-    color: var(--secondary-color);
-}
-
-/* Service Ends */
-
-/* New Product Starts */
-
-.product-section-2 {
     background: #F6F6F6;
-    padding: 100px 0;
 }
 
-/* New Product Ends */
+.collections img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.collections-12 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.colc-no {
+    font-family: "Amiri", serif;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+/* Collection Ends */
 
 /* Footer Starts */
+
 
 footer {
     padding: 100px 0;
@@ -413,31 +296,6 @@ footer .primary-btn {
 /* Media Query */
 
 @media screen and (max-width:1024px) {
-
-    /* Product and New-Product */
-
-    .pic-1,
-    .pic-2 {
-        margin-bottom: 40px;
-    }
-
-    .l-r-arrow {
-        /* visibility: hidden; */
-        display: none !important;
-    }
-
-    /* Story Section */
-
-    .story-image {
-        margin: 0 auto;
-    }
-
-    .story-content {
-        margin: 0 auto;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
     /* Footer Section */
 
     .sm-icons {
@@ -449,48 +307,29 @@ footer .primary-btn {
 
     /* Banner Section */
 
-    .title1 {
-        font-size: 50px;
-    }
-
-    .title2 {
-        font-size: 40px;
-    }
-
     .nav-logo img {
         max-width: 200px;
     }
 
-    .primary-btn {
-        font-size: 16px;
+    /* Collection Section */
+
+    .collection-section .row {
+        display: flex;
+        justify-content: center;
     }
 
-    .banner-section .primary-btn {
-        padding: 16px 35px;
+    .collections {
+        margin-bottom: 30px;
     }
-
-    /* Story Section */
-
-    .big-image img {
-        max-width: 550px;
-    }
-
-    .small-image img {
-        max-width: 280px;
-        height: 300px;
-        bottom: -20px;
-        right: 20px;
-        position: absolute;
-    }
-
-
-
 
     /* Footer Section */
 
+    .institutional,
+    .social-media {
+        margin-top: 30px;
+    }
+
     footer .col-md-6 {
-        /* display: flex; */
-        /* justify-content: center; */
         text-align: center;
     }
 
@@ -507,7 +346,6 @@ footer .primary-btn {
     .sm-icons {
         margin-right: 0;
     }
-
 }
 
 @media screen and (max-width:576px) {
@@ -517,119 +355,39 @@ footer .primary-btn {
         padding: 50px 0 !important;
     }
 
-    /* Story Section */
+    /* Banner Section */
 
-    .big-image img {
-        max-width: 200px;
+    .colc-white-box {
+        padding: 16px 50px;
+        max-width: 300px;
     }
 
-    .small-image img {
-        max-width: 120px;
-        height: 130px;
-        bottom: 30px;
-        right: 55px;
-        position: absolute;
-    }
-
-
-    /* Service Section */
-
-    .shop,
-    .saving {
-        margin-bottom: 40px;
-    }
-
-    /* Product and Product-2 */
-
-    .prod-pic {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .product-content {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .ratings {
-        display: flex;
-        justify-content: center;
-    }
-
-    .prod-desc,
-    .prod-desc-1 {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .pic-4 {
-        margin-bottom: 0;
+    .colc-banner-section .title1 {
+        font-size: 50px;
     }
 
     /* Footer Section */
 
-
     .offer-desc {
         margin: 0 auto;
+        margin-bottom: 20px;
     }
-
-    footer .primary-btn {
-        padding: 16px 35px;
-    }
-
-    .sm-icons {
-        margin-left: 5px;
-    }
-
 }
 
 @media screen and (max-width:425px) {
-
-    .title2 {
-        font-size: 30px;
-    }
-
-    /* Service Section */
-
-    .service-desc {
-        max-width: 170px;
-    }
-}
-
-@media screen and (max-width:375px) {
-
-    /* Product and Product-2 */
-
-    .p-1 {
-        max-width: 280px;
-    }
-
-    /* Service Section */
-
-    .support {
-        margin-bottom: 40px;
-    }
-
-}
-
-@media screen and (max-width:320px) {
-
-    /* Banner Section */
+    
+     /* Banner Section */
 
     .nav-logo img {
         max-width: 150px;
     }
 
-    .banner-section .primary-btn {
-        padding: 16px 25px;
+    .colc-white-box {
+        padding: 10px 30px;
+        max-width: 200px;
     }
 
-    .story-section .primary-btn {
-        padding: 16px 25px;
+    .colc-banner-section .title1 {
+        font-size: 35px;
     }
-
-    .arrow {
-        max-width: 20px;
-    }
-
 }
