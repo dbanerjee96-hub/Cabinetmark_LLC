@@ -9,12 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom css -->
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/details.css">
 </head>
 
 <body>
-    <!-- Header Starts -->
 
+    <!-- Header Section -->
     <header>
         <div class="top-navbar">
             <div class="container">
@@ -39,7 +39,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link active text-white" href="#">SHOP NOW</a>
                                 <div class="dropdown-content">
-                                    <a href="#">PRODUCTS</a>
+                                    <a href="./product.html">PRODUCTS</a>
                                     <a href="./collection.html">COLLECTION</a>
                                 </div>
                             </li>
@@ -105,237 +105,192 @@
         </div>
     </header>
 
-    <!-- Header Ends -->
+    <!-- Detail Starts -->
 
-    <!-- Banner Starts -->
-
-    <section class="prod-banner-section d-flex justify-content-center align-items-center text-center">
-        <div class="container">
-            <div class="prod-white-box">
-                <h1 class="title1">
-                    Products
-                </h1>
-            </div>
-        </div>
-    </section>
-
-    <!-- Banner Ends -->
-
-    <!-- Product Starts -->
-
-    <section class="product-section">
+    <section class="details-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="filter-section">
-                        <div class="prod-search d-flex justify-content-between align-items-center">
-                            <input type="text" name="search" id="search" placeholder="Search">
-                            <div class="search-icon">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                <div class="col-12 col-md-12 col-lg-7">
+                    <div class="detail-img">
+                        <div class="detail-lg-img">
+                            <img src="./assets/details-large-pic.png" alt="">
+                        </div>
+                        <div class="detail-sm-img d-flex align-items-center justify-content-between">
+                            <div class="sm-lf-arrow">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14.5"
+                                        transform="matrix(0.984808 -0.173648 -0.173648 -0.984808 5.20973 34.7537)"
+                                        stroke="#435C56" />
                                     <path
-                                        d="M13.643 13.67L16.723 16.75M15.75 8.25C15.75 10.2391 14.9598 12.1468 13.5533 13.5533C12.1468 14.9598 10.2391 15.75 8.25 15.75C6.26088 15.75 4.35322 14.9598 2.9467 13.5533C1.54018 12.1468 0.75 10.2391 0.75 8.25C0.75 6.26088 1.54018 4.35322 2.9467 2.9467C4.35322 1.54018 6.26088 0.75 8.25 0.75C10.2391 0.75 12.1468 1.54018 13.5533 2.9467C14.9598 4.35322 15.75 6.26088 15.75 8.25Z"
-                                        stroke="#5E5E5E" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                        d="M20.2097 21.0181L19.4661 21.7537L15.4158 17.745C15.3505 17.6807 15.2986 17.6043 15.2633 17.5202C15.2279 17.4361 15.2097 17.3458 15.2097 17.2547C15.2097 17.1636 15.2279 17.0734 15.2633 16.9892C15.2986 16.9051 15.3505 16.8287 15.4158 16.7645L19.4661 12.7537L20.209 13.4892L16.4075 17.2537L20.2097 21.0181Z"
+                                        fill="#435C56" />
                                 </svg>
                             </div>
-                        </div>
-                        <div class="prod-categories d-flex align-items-center justify-content-between">
-                            <div class="categories">Product Categories</div>
-                            <div>
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.92027 0.263976C5.04827 0.151976 5.23227 0.0799758 5.47227 0.0479758C5.71227 0.0159757 5.85627 -2.43187e-05 5.90427 -2.43187e-05C6.16027 -2.43187e-05 6.28827 0.0719757 6.28827 0.215976L6.26427 4.91998H11.0403C11.1203 4.91998 11.1763 4.95998 11.2083 5.03998C11.2403 5.10398 11.2563 5.17598 11.2563 5.25598C11.2563 5.51198 11.2243 5.71998 11.1603 5.87998C11.0963 6.02398 11.0163 6.15998 10.9203 6.28798H6.28827V10.92C6.14427 11.016 5.95227 11.088 5.71227 11.136C5.48827 11.168 5.31227 11.184 5.18427 11.184C5.00827 11.184 4.92027 11.12 4.92027 10.992V6.28798H0.144273C0.0482735 6.28798 0.000273466 6.15998 0.000273466 5.90398C0.000273466 5.85598 0.0162735 5.71998 0.0482735 5.49598C0.0802735 5.25598 0.144273 5.06398 0.240274 4.91998H4.89627L4.92027 0.263976Z"
-                                        fill="#0D0D0D" />
-                                </svg>
+                            <div class="sm-img">
+                                <img src="./assets/details-1.png" alt="">
                             </div>
-                        </div>
-                        <div class="filter d-flex align-items-center justify-content-between">
-                            <div class="filter-price">Filter By Price</div>
-                            <div>
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.92027 0.263976C5.04827 0.151976 5.23227 0.0799758 5.47227 0.0479758C5.71227 0.0159757 5.85627 -2.43187e-05 5.90427 -2.43187e-05C6.16027 -2.43187e-05 6.28827 0.0719757 6.28827 0.215976L6.26427 4.91998H11.0403C11.1203 4.91998 11.1763 4.95998 11.2083 5.03998C11.2403 5.10398 11.2563 5.17598 11.2563 5.25598C11.2563 5.51198 11.2243 5.71998 11.1603 5.87998C11.0963 6.02398 11.0163 6.15998 10.9203 6.28798H6.28827V10.92C6.14427 11.016 5.95227 11.088 5.71227 11.136C5.48827 11.168 5.31227 11.184 5.18427 11.184C5.00827 11.184 4.92027 11.12 4.92027 10.992V6.28798H0.144273C0.0482735 6.28798 0.000273466 6.15998 0.000273466 5.90398C0.000273466 5.85598 0.0162735 5.71998 0.0482735 5.49598C0.0802735 5.25598 0.144273 5.06398 0.240274 4.91998H4.89627L4.92027 0.263976Z"
-                                        fill="#0D0D0D" />
-                                </svg>
+                            <div class="sm-img">
+                                <img src="./assets/details-2.png" alt="">
                             </div>
-                        </div>
-                        <div class="status d-flex align-items-center justify-content-between">
-                            <div class="prod-status">Product Status</div>
-                            <div>
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            <div class="sm-img">
+                                <img src="./assets/details-3.png" alt="">
+                            </div>
+                            <div class="sm-img">
+                                <img src="./assets/details-4.png" alt="">
+                            </div>
+                            <div class="sm-rh-arrow">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15"
+                                        transform="matrix(-0.984808 0.173648 0.173648 0.984808 29.5439 0)"
+                                        fill="#435C56" />
                                     <path
-                                        d="M4.92027 0.263976C5.04827 0.151976 5.23227 0.0799758 5.47227 0.0479758C5.71227 0.0159757 5.85627 -2.43187e-05 5.90427 -2.43187e-05C6.16027 -2.43187e-05 6.28827 0.0719757 6.28827 0.215976L6.26427 4.91998H11.0403C11.1203 4.91998 11.1763 4.95998 11.2083 5.03998C11.2403 5.10398 11.2563 5.17598 11.2563 5.25598C11.2563 5.51198 11.2243 5.71998 11.1603 5.87998C11.0963 6.02398 11.0163 6.15998 10.9203 6.28798H6.28827V10.92C6.14427 11.016 5.95227 11.088 5.71227 11.136C5.48827 11.168 5.31227 11.184 5.18427 11.184C5.00827 11.184 4.92027 11.12 4.92027 10.992V6.28798H0.144273C0.0482735 6.28798 0.000273466 6.15998 0.000273466 5.90398C0.000273466 5.85598 0.0162735 5.71998 0.0482735 5.49598C0.0802735 5.25598 0.144273 5.06398 0.240274 4.91998H4.89627L4.92027 0.263976Z"
-                                        fill="#0D0D0D" />
+                                        d="M14.5439 13.7355L15.2876 13L19.3379 17.0087C19.4032 17.0729 19.455 17.1493 19.4904 17.2335C19.5257 17.3176 19.5439 17.4078 19.5439 17.499C19.5439 17.5901 19.5257 17.6803 19.4904 17.7645C19.455 17.8486 19.4032 17.925 19.3379 17.9892L15.2876 22L14.5446 21.2645L18.3462 17.5L14.5439 13.7355Z"
+                                        fill="white" />
                                 </svg>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 col-lg-9">
-                    <div class="sort-section d-flex justify-content-between align-items-center flex-wrap">
-                        <div class="prod-pages d-flex justify-content-between align-items-center">
-                            <div class="prod">Products:</div>
-                            <div class="pages-no">
-                                <p>9 of 48</p>
+                <div class="col-12 col-md-12 col-lg-5">
+                    <div class="details-content">
+                        <div class="details-hdr">
+                            Lorem Ipsum
+                        </div>
+                        <div class="details-ratings d-flex align-items-center">
+                            <div class="det-star me-1">
+                                <img src="./assets/det-star.png" alt="">
+                            </div>
+                            <div class="det-star me-1">
+                                <img src="./assets/det-star.png" alt="">
+                            </div>
+                            <div class="det-star me-1">
+                                <img src="./assets/det-star.png" alt="">
+                            </div>
+                            <div class="det-star me-1">
+                                <img src="./assets/det-star.png" alt="">
+                            </div>
+                            <div class="det-star me-3">
+                                <img src="./assets/det-star-blank.png" alt="">
+                            </div>
+                            <div class="det-reviews">
+                                1477 Reviews
                             </div>
                         </div>
-                        <div class="sort d-flex justify-content-between align-items-center">
-                            <div class="sort-by">Sort By:</div>
-                            <div class="selling">
-                                <p>Best Selling</p>
+                        <div class="details-para">
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </div>
+                        <div class="details-price d-flex align-items-center">
+                            <div class="original-price">$24.99</div>
+                            <div class="past-price">$34.99</div>
+                        </div>
+                        <div class="details-para-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </div>
+                        <div class="details-quantity">
+                            <div class="det-quantity">QUANTITY</div>
+                            <div class="det-quan-box d-flex align-items-center justify-content-between">
+                                <div class="left-sphere d-flex justify-content-center align-items-center">
+                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.32058 1.35884H0.679422C0.304109 1.35884 0 1.05473 0 0.679422C0 0.304109 0.304109 0 0.679422 0H9.32058C9.69589 0 10 0.304109 10 0.679422C10 1.05473 9.69589 1.35884 9.32058 1.35884Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="1">1</div>
+                                <div class="right-sphere d-flex justify-content-center align-items-center">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.99973 10C4.62442 10 4.32031 9.69589 4.32031 9.32058V0.679422C4.32031 0.304109 4.62442 0 4.99973 0C5.37505 0 5.67916 0.304109 5.67916 0.679422V9.32058C5.67916 9.69589 5.37505 10 4.99973 10Z"
+                                            fill="white" />
+                                        <path
+                                            d="M9.32058 5.67916H0.679422C0.304109 5.67916 0 5.37505 0 4.99973C0 4.62442 0.304109 4.32031 0.679422 4.32031H9.32058C9.69589 4.32031 10 4.62442 10 4.99973C10 5.37505 9.69589 5.67916 9.32058 5.67916Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-cards">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <a class="prod-card-1" href="./details.html">
-                                    <div><img src="./assets/pic-001.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-002.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                        <div class="det-btn">
+                            <a class="primary-btn" href="">Add To Cart</a>
+                        </div>
+                        <div class="details-dropdown">
+                            <div class="lists">
+                                <div class="lists-items">SPECIFICATIONS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-004.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                            <div class="d-d-line"></div>
+                            <div class="lists">
+                                <div class="lists-items">REVIEWS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-002.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                            <div class="d-d-line"></div>
+                            <div class="lists">
+                                <div class="lists-items">MATERIALS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-004.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                            <div class="d-d-line"></div>
+                            <div class="lists">
+                                <div class="lists-items">SHIPPING & RETURNS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-001.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                            <div class="d-d-line"></div>
+                            <div class="lists">
+                                <div class="lists-items">INSTALLATION INSTRUCTIONS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-004.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
+                            <div class="d-d-line"></div>
+                            <div class="lists">
+                                <div class="lists-items">CARE INSTRUCTIONS</div>
+                                <div>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.7128 4.32049H10V5.6998H5.7128V10H4.2872V5.6998H0V4.32049H4.2872V0H5.7128V4.32049Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-001.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="prod-card">
-                                    <div><img src="./assets/pic-002.png" alt=""></div>
-                                    <div class="prod-ratings d-flex align-items-center">
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                        <div class="star"><img src="./assets/star.png" alt=""></div>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                                    </p>
-                                    <div class="prod-card-price">Price $229.00</div>
-                                </div>
-                            </div>
+                            <div class="d-d-line"></div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +298,92 @@
         </div>
     </section>
 
-    <!-- Product Ends -->
+    <!-- Detail Ends -->
+
+    <!-- Details Bottom Starts -->
+
+    <section class="details-bottom-section">
+        <div class="container">
+            <h2 class="title2 text-center">
+                YOU MAY ALSO LIKE
+            </h2>
+            <div class="service-symbols text-center">
+                <img src="./assets/right-arrow.png" alt="">
+                <img src="./assets/diamond.png" alt="">
+                <img src="./assets/left-arrow.png" alt="">
+            </div>
+            <div class="product-cards">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="prod-card">
+                            <div><img src="./assets/pic-001.png" alt=""></div>
+                            <div class="prod-ratings d-flex align-items-center">
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </p>
+                            <div class="prod-card-price">Price $229.00</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="prod-card">
+                            <div><img src="./assets/pic-002.png" alt=""></div>
+                            <div class="prod-ratings d-flex align-items-center">
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </p>
+                            <div class="prod-card-price">Price $229.00</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="prod-card">
+                            <div><img src="./assets/pic-003.png" alt=""></div>
+                            <div class="prod-ratings d-flex align-items-center">
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </p>
+                            <div class="prod-card-price">Price $229.00</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="prod-card">
+                            <div><img src="./assets/pic-004.png" alt=""></div>
+                            <div class="prod-ratings d-flex align-items-center">
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                                <div class="star"><img src="./assets/star.png" alt=""></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </p>
+                            <div class="prod-card-price">Price $229.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Bottom Ends -->
 
     <!-- Footer Starts -->
 
@@ -436,12 +476,15 @@
         </div>
     </footer>
 
+
     <!-- Footer Ends -->
+
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

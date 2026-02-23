@@ -79,15 +79,21 @@ a {
 
 /* Header Starts */
 
+
 .top-navbar {
     padding: 4.5px 0;
-    background-color: var(--primary-color);
+    background-color: #0D0D0D;
+    opacity: 97%;
 }
 
 .top-bar-cnt {
     font-family: "Poppins", sans-serif;
     text-align: center;
     color: var(--tertiary-color);
+}
+
+.bottom-navbar {
+    background: var(--primary-color);
 }
 
 .nav-link {
@@ -167,95 +173,134 @@ a {
 
 /* Header Ends */
 
-/* Banner Starts */
+/* Detail Starts */
 
-.prod-banner-section {
-    background: url(../assets/about-banner-2.png) no-repeat center/cover;
-    padding: 180px 0;
-}
-
-.prod-white-box {
-    max-width: 470px;
-    padding: 32px 100px;
-    background: var(--tertiary-color);
-    border-radius: 16px;
-    margin: 0 auto;
-}
-
-.prod-banner-section .title1 {
-    margin-bottom: 0;
-}
-
-/* Banner Ends */
-
-/* Product Starts */
-
-.product-section {
+.details-section {
     padding: 100px 0;
-    /* background: #F6F6F6; */
 }
 
-.filter-section svg {
-    cursor: pointer;
+.detail-lg-img {
+    margin-bottom: 32px;
 }
 
-.prod-search input {
-    border: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    background: transparent;
-}
-
-.prod-search {
-    outline: 1px solid var(--primary-color);
-    padding: 15px;
-    border-radius: 16px;
-    margin-bottom: 20px;
-}
-
-.prod-categories,
-.filter {
-    margin-bottom: 24px;
-}
-
-.categories,
-.filter-price,
-.prod-status {
-    font-family: "Amiri", serif;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.sort-section p {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-}
-
-.prod,
-.sort-by {
-    font-family: "Amiri", serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.pages-no,
-.selling {
-    background: #F6F6F6;
-    padding: 12px 18px;
-    border-radius: 12px;
-    margin-left: 20px;
-}
-
-.prod-card-1 {
-    /* cursor: pointer; */
-}
-
-.prod-card img {
-    margin-bottom: 22px;
+.detail-lg-img img {
     width: 100%;
 }
 
-.prod-card-1 img {
+.details-hdr {
+    font-family: "Amiri", serif;
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.details-ratings {
+    margin-bottom: 15px;
+}
+
+.det-reviews,
+.details-para,
+.details-para-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.details-price {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.original-price {
+    font-family: "Amiri", serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.past-price {
+    font-family: "Amiri", serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.det-quantity {
+    font-family: "Amiri", serif;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.det-quan-box {
+    width: 165px;
+    height: 51px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    padding: 6px;
+    margin-bottom: 50px;
+}
+
+.left-sphere,
+.right-sphere {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.det-btn .primary-btn {
+    padding: 27px 200px;
+    background: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lists svg {
+    margin-bottom: 25px;
+}
+
+.lists-items {
+    font-family: "Amiri", serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+
+.d-d-line {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 25px;
+}
+
+
+/* Detail Ends */
+
+/* Details Bottom Starts */
+
+.service-symbols {
+    margin-bottom: 40px;
+}
+
+.symbols {
+    margin-bottom: 32px;
+}
+
+.product-cards {
+    padding: 20px 0;
+}
+
+.prod-card {
+    margin-top: 40px;
+}
+
+.prod-card img {
     margin-bottom: 22px;
     width: 100%;
 }
@@ -266,22 +311,10 @@ a {
     width: auto !important;
 }
 
-.prod-card,
-.prod-card-1 {
-    margin-top: 40px;
-}
-
 .prod-card p {
     margin-bottom: 6px;
     font-family: "Amiri", serif;
     font-size: 16px;
-}
-
-.prod-card-1 p {
-    margin-bottom: 6px;
-    font-family: "Amiri", serif;
-    font-size: 16px;
-    color: var(--primary-color);
 }
 
 .prod-card-price {
@@ -291,7 +324,7 @@ a {
     color: var(--primary-color);
 }
 
-/* Product Ends */
+/* Details Bottom Ends */
 
 /* Footer Starts */
 
@@ -375,13 +408,52 @@ footer .primary-btn {
 
 /* Media Query */
 
+@media screen and (max-width:1200px) {
+
+    /* Details Section */
+
+    /* .detail-lg-img img {
+        width: 620px;
+    }
+
+    .sm-img img {
+        width: 110px;
+    } */
+
+}
+
 @media screen and (max-width:1024px) {
 
-    /* Product Section */
+    /* Details Section */
 
-    .prod-search input {
-        width: 70%;
+    /* .detail-lg-img img {
+        width: 80%;
+        margin: 0 auto;
+    } */
+
+    .detail-sm-img {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
     }
+
+    .sm-img img {
+        width: 100px;
+    }
+
+    .details-content {
+        width: 90%;
+    }
+
+    .details-hdr {
+        font-size: 45px;
+    }
+
+    .det-btn .primary-btn {
+        padding: 18px 110px;
+        font-size: 16px;
+    }
+
 
     /* Footer Section */
 
@@ -391,12 +463,6 @@ footer .primary-btn {
 }
 
 @media screen and (max-width:768px) {
-
-    /* Banner Section */
-
-    .nav-logo img {
-        max-width: 200px;
-    }
 
     /* Footer Section */
 
@@ -431,21 +497,76 @@ footer .primary-btn {
         padding: 50px 0 !important;
     }
 
-    /* Banner Section */
+    /* Navbar Section */
 
-    .prod-white-box {
-        padding: 16px 50px;
-        max-width: 300px;
+    .nav-logo img {
+        max-width: 150px;
     }
 
-    .prod-banner-section .title1 {
-        font-size: 50px;
+    /* Details Section */
+
+    .detail-lg-img img {
+        height: 380px !important;
     }
 
-    /* Product Section */
+    .sm-lf-arrow svg {
+        width: 25px;
+        height: 25px;
+    }
 
-    .filter-section {
-        margin-bottom: 50px;
+    .sm-rh-arrow svg {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .sm-img img {
+        width: 60px;
+    }
+
+    .details-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .details-ratings {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .details-price {
+        display: flex;
+        justify-content: center;
+    }
+
+    .det-quantity {
+        margin-top: 30px;
+    }
+
+    .det-quan-box {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .service-symbols {
+        margin-bottom: 0;
+    }
+
+
+    /* Details Bottom Section */
+
+    .details-bottom-section .prod-ratings {
+        display: flex;
+        justify-content: center;
+    }
+
+    .details-bottom-section p {
+        text-align: center;
+    }
+
+    .details-bottom-section .prod-card-price {
+        text-align: center;
     }
 
     /* Footer Section */
@@ -454,29 +575,36 @@ footer .primary-btn {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
 
-    /* Banner Section */
+    /* Details Section */
 
-    .nav-logo img {
-        max-width: 150px;
+    .detail-lg-img img {
+        height: 300px !important;
     }
 
-    .prod-white-box {
-        padding: 10px 30px;
-        max-width: 200px;
+}
+
+@media screen and (max-width:320px) {
+
+    /* Details Section */
+
+    .sm-lf-arrow svg {
+        width: 17px;
+        height: 17px;
     }
 
-    .prod-banner-section .title1 {
-        font-size: 35px;
+    .sm-rh-arrow svg {
+        width: 17px;
+        height: 17px;
     }
 
-    /* Product Section */
 
-    .prod-pages {
-        margin-bottom: 15px;
+    .sm-img img {
+        width: 45px;
     }
 
 }
