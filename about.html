@@ -32,6 +32,9 @@
                             <img src="./assets/logo.png" alt="">
                         </a>
                     </div>
+                    <div class="menu">
+                        <span></span>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -133,21 +136,23 @@
                         <img src="./assets/diamond.png" alt="">
                         <img src="./assets/left-arrow.png" alt="">
                     </div>
-                    <p class="about-para">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.
-                        <br>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.
-                        <br>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.
-                    </p>
+                    <div class="about-para">
+                        <p class="mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p class="mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
                 </div>
                 <div class="about-pics d-flex align-items-center flex-wrap">
                     <div class="about-pic-1"><img src="./assets/about-pic-1.png" alt=""></div>
@@ -173,19 +178,27 @@
                         <img src="./assets/diamond.png" alt="">
                         <img src="./assets/left-arrow.png" alt="">
                     </div>
-                    <p class="story-para">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum.
+                    <div class="story-para">
+                        <p class="mb-3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry. Lorem Ipsum.
+                        </p>
 
-                        <br>
-                        <br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever
+                            since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -207,12 +220,14 @@
                         <div class="offer-desc">
                             Be the first to know about new arrivals and exclusive offers.
                         </div>
-                        <div class="email-input">
-                            <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                        </div>
-                        <div class="footer-btn">
-                            <a class="primary-btn" href="">SUBSCRIBE</a>
-                        </div>
+                        <form action="">
+                            <div class="email-input">
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="footer-btn">
+                                <a class="primary-btn" href="">SUBSCRIBE</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -279,7 +294,8 @@
             </div>
             <div class="long-line"></div>
             <div class="ft-bt-cnt">
-                <a class="ft-bt-cnt-a" href="">Copyright © 2025 - CabinetMark LLC - All Rights Reserved </a>
+                <p class="ft-bt-cnt-a" href="">Copyright © 2025 - <a href="">CabinetMark LLC</a> - All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>
@@ -287,11 +303,19 @@
 
     <!-- Footer Ends -->
 
-    <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Js Starts -->
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.querySelector(".menu");
+            const navbarCollapse = document.querySelector(".navbar-collapse");
+
+            menu.addEventListener("click", () => {
+                menu.classList.toggle("show");
+                navbarCollapse.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

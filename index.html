@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CabinetMark</title>
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -103,16 +107,6 @@
                                 Cart: 0 Item(S)
                             </a>
                         </div>
-                        <!-- <div id="modal" class="modal">
-                            <div class="modal-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus odit porro ullam
-                                    numquam minima molestias aliquid ipsum libero nihil at eligendi perferendis
-                                    architecto pariatur molestiae est sunt, rem placeat debitis! At illo minima optio
-                                    reprehenderit deleniti corporis, similique iusto earum veritatis doloribus impedit,
-                                    eveniet illum recusandae expedita quisquam tempora.
-                                </p>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </nav>
@@ -124,14 +118,18 @@
     <!-- Banner Starts -->
 
     <section class="banner-section d-flex justify-content-center align-items-center text-center">
-        <div class="white-box">
-            <div class="banner-content">
-                <h1 class="title1">Factory Direct Pricing</h1>
-                <p class="banner-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy
-                </p>
-                <div class="banner-btn">
-                    <a class="primary-btn" href="">EXPLORE DOOR <img class="arrow" src="./assets/Vector.png" alt=""></a>
+        <div class="container">
+            <div class="white-box">
+                <div class="banner-content">
+                    <h1 class="title1">Factory Direct Pricing</h1>
+                    <p class="banner-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the industry's standard dummy
+                    </p>
+                    <div class="banner-btn">
+                        <a class="primary-btn" href="">EXPLORE DOOR <img class="arrow" src="./assets/Vector.png"
+                                alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,7 +141,7 @@
 
     <section class="product-section">
         <div class="container">
-            <div class="product-top d-flex align-items-center justify-content-between">
+            <div class="product-top">
                 <div class="product-content">
                     <div class="sub-title2">FEATURED PRODUCTS</div>
                     <div class="title2">TOP PRODUCTS</div>
@@ -152,129 +150,230 @@
                         <img src="./assets/left-arrow.png" alt="">
                     </div>
                 </div>
-                <div class="l-r-arrow d-flex align-items-center">
-                    <div class="l-arrow">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.2"
-                                d="M18.7372 2.86296C19.0653 3.19114 19.2496 3.63617 19.2496 4.10021C19.2496 4.56425 19.0653 5.00929 18.7372 5.33746L10.0747 14L18.7372 22.6624C19.056 22.9925 19.2324 23.4346 19.2284 23.8934C19.2244 24.3522 19.0404 24.7912 18.7159 25.1156C18.3914 25.4401 17.9525 25.6241 17.4937 25.6281C17.0348 25.6321 16.5928 25.4557 16.2627 25.1369L6.36296 15.2372C6.03489 14.909 5.85059 14.464 5.85059 14C5.85059 13.5359 6.03489 13.0909 6.36296 12.7627L16.2627 2.86296C16.5909 2.53489 17.0359 2.35059 17.5 2.35059C17.964 2.35059 18.409 2.53489 18.7372 2.86296Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                    <div class="r-arrow">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.26279 2.86296C8.93471 3.19114 8.75041 3.63617 8.75041 4.10021C8.75041 4.56425 8.93471 5.00929 9.26279 5.33746L17.9253 14L9.26279 22.6624C8.94401 22.9925 8.76762 23.4346 8.77161 23.8934C8.7756 24.3522 8.95964 24.7912 9.28411 25.1156C9.60857 25.4401 10.0475 25.6241 10.5063 25.6281C10.9652 25.6321 11.4072 25.4557 11.7373 25.1369L21.637 15.2372C21.9651 14.909 22.1494 14.464 22.1494 14C22.1494 13.5359 21.9651 13.0909 21.637 12.7627L11.7373 2.86296C11.4091 2.53489 10.9641 2.35059 10.5 2.35059C10.036 2.35059 9.59096 2.53489 9.26279 2.86296Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-1">
-                        <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc-1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-2">
-                        <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-3">
-                        <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-4">
-                        <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
+
         </div>
     </section>
 
@@ -366,129 +465,232 @@
                         <img src="./assets/left-arrow.png" alt="">
                     </div>
                 </div>
-                <div class="l-r-arrow d-flex align-items-center">
-                    <div class="l-arrow">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.2"
-                                d="M18.7372 2.86296C19.0653 3.19114 19.2496 3.63617 19.2496 4.10021C19.2496 4.56425 19.0653 5.00929 18.7372 5.33746L10.0747 14L18.7372 22.6624C19.056 22.9925 19.2324 23.4346 19.2284 23.8934C19.2244 24.3522 19.0404 24.7912 18.7159 25.1156C18.3914 25.4401 17.9525 25.6241 17.4937 25.6281C17.0348 25.6321 16.5928 25.4557 16.2627 25.1369L6.36296 15.2372C6.03489 14.909 5.85059 14.464 5.85059 14C5.85059 13.5359 6.03489 13.0909 6.36296 12.7627L16.2627 2.86296C16.5909 2.53489 17.0359 2.35059 17.5 2.35059C17.964 2.35059 18.409 2.53489 18.7372 2.86296Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                    <div class="r-arrow">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.26279 2.86296C8.93471 3.19114 8.75041 3.63617 8.75041 4.10021C8.75041 4.56425 8.93471 5.00929 9.26279 5.33746L17.9253 14L9.26279 22.6624C8.94401 22.9925 8.76762 23.4346 8.77161 23.8934C8.7756 24.3522 8.95964 24.7912 9.28411 25.1156C9.60857 25.4401 10.0475 25.6241 10.5063 25.6281C10.9652 25.6321 11.4072 25.4557 11.7373 25.1369L21.637 15.2372C21.9651 14.909 22.1494 14.464 22.1494 14C22.1494 13.5359 21.9651 13.0909 21.637 12.7627L11.7373 2.86296C11.4091 2.53489 10.9641 2.35059 10.5 2.35059C10.036 2.35059 9.59096 2.53489 9.26279 2.86296Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-1">
-                        <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+            <!-- Swiper -->
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc-1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-2">
-                        <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-3">
-                        <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                    <div class="prod-pic pic-4">
-                        <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
-                        <div class="ratings d-flex align-items-center">
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
                             </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
-                            <div class="star">
-                                <img src="./assets/star.png" alt="">
-                            </div>
+                            <div class="price">Price $229.00</div>
                         </div>
-                        <div class="prod-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
-                        </div>
-                        <div class="price">Price $229.00</div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-001.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-002.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-003.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="prod-pic pic-1">
+                            <div><img class="p-1" src="./assets/pic-004.png" alt=""></div>
+                            <div class="ratings d-flex align-items-center">
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="./assets/star.png" alt="">
+                                </div>
+                            </div>
+                            <div class="prod-desc-1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dignissim.
+                            </div>
+                            <div class="price">Price $229.00</div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
+
         </div>
     </section>
 
@@ -508,12 +710,14 @@
                         <div class="offer-desc">
                             Be the first to know about new arrivals and exclusive offers.
                         </div>
-                        <div class="email-input">
-                            <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                        </div>
-                        <div class="footer-btn">
-                            <a class="primary-btn" href="">SUBSCRIBE</a>
-                        </div>
+                        <form action="">
+                            <div class="email-input">
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="footer-btn">
+                                <a class="primary-btn" href="">SUBSCRIBE</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -580,7 +784,8 @@
             </div>
             <div class="long-line"></div>
             <div class="ft-bt-cnt">
-                <a class="ft-bt-cnt-a" href="">Copyright © 2025 - CabinetMark LLC - All Rights Reserved </a>
+                <p class="ft-bt-cnt-a" href="">Copyright © 2025 - <a href="">CabinetMark LLC</a> - All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>
@@ -588,12 +793,12 @@
 
     <!-- Footer Ends -->
 
-    <!-- Bootstrap js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script> -->
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Js Starts -->
+
+    <!-- Header Section -->
     <script>
         const menu = document.querySelector(".menu");
         const navbarCollapse = document.querySelector(".navbar-collapse");
@@ -611,6 +816,19 @@
                 collapse = true;
             }
         });
+
+        // Product Section
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+
     </script>
 
 </body>
